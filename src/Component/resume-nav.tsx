@@ -1,5 +1,5 @@
 import{ NavContainerStyle, NavUlStyle, NavLiStyle, NavLinksStyle } from "./nav-style"
-function Navbar(){
+export default function Navbar(){
     return(
         <NavContainerStyle>
             <NavUlStyle>
@@ -34,5 +34,3 @@ function Navbar(){
     </NavContainerStyle>
     );
 }
-
-export default Navbar;
