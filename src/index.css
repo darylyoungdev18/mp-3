@@ -1,68 +1,89 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,
+body{
+  width:100%;
+  height:100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Roboto', sans-serif;
 }
-a:hover {
-  color: #535bf2;
+.top-wrapper{
+  width:100%;
+  height:100%;
 }
-
-body {
+header h1{
+  background: #93cdfe;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-size: calc(5px + 2vw);
+}
+.content-wrapper{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  min-height:82vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+main{
+  background: #bb2a2a;
+  color: white;
+  text-align:center;
+  padding:2% 3%;
+}
+main h2{
+  font-size: calc(4px + 1.5vw);
+}
+main h3{
+  font-size: calc(4px + 1.3vw);
+}
+main p{
+  font-size: calc(2px + 1.1vw);
+}
+.resume-image img{
+  max-width: 70%;
+}
+footer{
+  background: #93cdfe;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+footer p{
+  font-size: calc(1px + 1vw);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media screen and (max-width:900px){
+  header h1{
+    font-size: calc(5px + 7vw);
   }
-  a:hover {
-    color: #747bff;
+  .content-wrapper{
+    grid-template-columns: 1fr;
   }
-  button {
-    background-color: #f9f9f9;
+  .nav-container {
+    padding:3%
+  }
+  nav ul{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  nav ul li{
+    border-radius: 1rem;
+    margin: 2%;
+    min-width: 7%;
+  }
+  nav a{
+    font-size: calc(5px + 3vw);
+  }
+  main h2{
+    font-size: calc(5px + 3.4vw);
+  }
+  main p{
+    font-size: calc(5px + 3vw);
+  }
+  footer p{
+    font-size: calc(5px + 3vw);
   }
 }

@@ -19,7 +19,7 @@ export default function Navbar(){
                     </NavLinksStyle>
                 </NavLiStyle>
                 <NavLiStyle>
-                    <NavLinksStyle to="/work-experience">
+                    <NavLinksStyle to="/technical-skills">
                         Technical Skills</NavLinksStyle>
                 </NavLiStyle>
                 <NavLiStyle>

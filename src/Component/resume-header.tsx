@@ -1,9 +1,11 @@
+import {Header} from "./wrapper-style.tsx";
+
 export default function ResumeHeader(){
     return(
-        <header>
+        <Header>
             <h1>
                 Daryl Young Resume
             </h1>
-        </header>
+        </Header>
     );
 }
