@@ -19,7 +19,7 @@ export default function Calculator() {
         setResult("");
     };
 
-    const handleAddition = (e) => {
+    const handleAddition = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (!checkInput()) return;
 
@@ -31,10 +31,10 @@ export default function Calculator() {
             return;
         }
 
-        setResult(firstNum + secondNum);
+        setResult((firstNum + secondNum).toString());
     }
 
-    const handleSubtraction = (e) => {
+    const handleSubtraction  = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (!checkInput()) return;
 
@@ -46,11 +46,11 @@ export default function Calculator() {
             return;
         }
 
-        setResult(firstNum - secondNum);
+        setResult((firstNum - secondNum).toString());
     };
 
 
-    const handleMultiplication = (e) => {
+    const handleMultiplication = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (!checkInput()) return;
 
@@ -62,10 +62,10 @@ export default function Calculator() {
             return;
         }
 
-        setResult(firstNum * secondNum);
+        setResult((firstNum * secondNum).toString());
     };
 
-    const handleDivision = (e) => {
+    const handleDivision = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (!checkInput()) return;
 
@@ -77,10 +77,10 @@ export default function Calculator() {
             return;
         }
 
-        setResult(firstNum / secondNum);
+        setResult((firstNum / secondNum).toString());
     };
 
-    const handleExponential = (e) => {
+    const handleExponential = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (!checkInput()) return;
 
@@ -96,7 +96,7 @@ export default function Calculator() {
         for (let i = 0; i < secondNum; i++) {
             resultNumber *= parseFloat(num1);
         }
-        setResult(resultNumber);
+        setResult((resultNumber).toString());
     };
 
 
